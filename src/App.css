@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff !important;
+  background-color: #004aa8 !important;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+}
+
+#top-menu {
+  background-color: #004aa8;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.hamburger {
+  border: none !important;
+}
+
+.container {
+  max-width: 1068px !important;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+}
+
+.introduction,
+.function {
+  margin-top: 70px;
+}
+
+.kicker {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
+  transform: scaleY(1.2);
+  letter-spacing: 5px;
+}
+
+.tagline {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+.caption {
+  margin-top: 1rem;
+  color: #c4c4c4;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.cta-btn {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.github {
+  color: inherit;
+  text-decoration: none;
+}
+
+.github i {
+  color: inherit;
+  font-size: 3rem;
+  cursor: pointer;
+  border: none;
+}
+
+.github i:hover {
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75rem;
+  height: 100%;
+  clip-path: polygon(45% 0%, 100% 0, 100% 99%, 55% 57%);
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  z-index: -1;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-bottom: 2px;
+}
+
+.section-sub-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.hr-tag {
+  width: 180px;
+  border: 5px solid;
+  border-radius: 5px;
+}
+
+.about-tech-logo {
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+.about-tech-logo img {
+  width: 8rem;
+}
+
+.proj-img {
+  width: 25rem;
+  height: 25rem;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.proj-tech-logo {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  font-size: 2rem;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.proj-tech-logo i {
+  padding: 1rem;
+}
+
+.proj-btns {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 10px 10px;
+  padding: 8px 18px;
+  color: #fff;
+  background: linear-gradient(
+    134deg,
+    rgb(106, 152, 240) 0%,
+    rgb(73, 97, 220) 99%
+  );
+  border-radius: 10px;
+  border: none;
+}
+
+.proj-btns a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.proj-btns a:hover {
+  color: inherit;
+}
+
+.email-btn {
+  margin-top: 1.5rem;
+}
+
+.dev-img {
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .introduction,
+  .about-logos,
+  .section-title,
+  .section-sub-title,
+  .section-text,
+  .email-btn {
+    text-align: center;
+  }
+  .function {
+    text-align: left;
+  }
+  .cta-btn {
+    margin: auto;
+  }
+  .hr-tag {
+    margin: auto;
+  }
+  .triangle {
+    display: none;
+  }
+  .dev-img {
+    margin: auto;
+    width: 10rem;
+    top: 0rem;
+    left: 0rem;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+}
