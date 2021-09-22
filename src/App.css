@@ -91,8 +91,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 75rem;
-  height: 100%;
+  width: 75%;
+  height: 40rem;
   clip-path: polygon(45% 0%, 100% 0, 100% 99%, 55% 57%);
   background-color: #fff;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
