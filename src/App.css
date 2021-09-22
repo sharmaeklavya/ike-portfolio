@@ -192,6 +192,10 @@ body {
 }
 
 .dev-img {
+  position: relative;
+  top: -30%;
+  width: 80%;
+  height: 15rem;
   text-decoration: none;
   border-radius: 15px;
 }
