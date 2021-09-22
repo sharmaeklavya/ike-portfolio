@@ -51,7 +51,15 @@ function App() {
         <div className="row">
           <div id="home" className="col-md-6">
             <div className="introduction">
-              <p className="kicker">Hi there, my name is</p>
+              <div className="kicker">
+                <span>Hi there, </span>
+                <img
+                  src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif"
+                  alt="hey-there-emoji"
+                  style={{ width: "30px" }}
+                />
+                <span> my name is</span>
+              </div>
               {/* eslint-disable-next-line no-template-curly-in-string */}
               <h1 className="title">{"`${Eklavya}`"}</h1>
               <p className="tagline">
