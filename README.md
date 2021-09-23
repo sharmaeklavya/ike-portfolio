@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-Open [Click here](https://ikesharma.netlify.app) to view it in the browser.
+[Click here](https://ikesharma.netlify.app) to view it in the browser.
