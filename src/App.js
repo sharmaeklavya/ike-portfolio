@@ -77,8 +77,29 @@ function App() {
                 >
                   Hire me
                 </a>
-                <a href="https://github.com/sharmaeklavya" className="github">
-                  <i className="fab fa-github"></i>
+                <a
+                  href="https://github.com/sharmaeklavya"
+                  className="home-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sharmaeklavya"
+                  className="home-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://twitter.com/eklavyajs"
+                  className="home-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-twitter-square"></i>
                 </a>
               </div>
             </div>

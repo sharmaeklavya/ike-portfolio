@@ -68,23 +68,20 @@ body {
   justify-content: space-between;
 }
 
-.github {
+.home-icon {
   color: inherit;
   text-decoration: none;
 }
 
-.github i {
-  color: inherit;
-  font-size: 3rem;
+.home-icon i {
+  font-size: 2.5rem;
   cursor: pointer;
-  border: none;
+  transition: 1s ease-in-out;
 }
 
-.github i:hover {
-  color: #000;
-  background-color: #fff;
-  border-radius: 50%;
-  border: none;
+.home-icon i:hover {
+  transform: scale(1.15);
+  color: #fff;
 }
 
 .triangle {
@@ -176,6 +173,11 @@ body {
   );
   border-radius: 10px;
   border: none;
+  transition: 1s ease-out;
+}
+
+.proj-btns:hover {
+  transform: scale(1.1);
 }
 
 .proj-btns a {
