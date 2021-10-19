@@ -173,6 +173,18 @@ function App() {
                       delete, managers can create, update and view, followed by
                       executives who can only create and view.
                     </p>
+
+                    <p className="small text-dark">
+                      Demo Account :
+                      <span className="px-1">
+                        <i class="fas fa-envelope-square px-1"></i>
+                        eklavya@es.in
+                      </span>
+                      <span className="px-1">
+                        <i class="fas fa-lock-open px-1"></i>
+                        123456
+                      </span>
+                    </p>
                     <button type="button" className="proj-btns">
                       <a
                         href="https://proj-invoice.netlify.app"
