@@ -228,7 +228,7 @@ function App() {
                               rel="noreferrer"
                             >
                               <i className="fab fa-github pe-2"></i>
-                              Frontend
+                              FE
                             </a>
                           </button>
                           <button type="button" className="proj-btns">
@@ -238,7 +238,7 @@ function App() {
                               rel="noreferrer"
                             >
                               <i className="fab fa-github pe-2"></i>
-                              Backend
+                              BE
                             </a>
                           </button>
                         </div>
