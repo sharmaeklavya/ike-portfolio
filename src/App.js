@@ -12,6 +12,7 @@ function App() {
           <a className="navbar-brand logo" href="/">
             <img src="imgs/logo34x35.svg" alt="logo-for-mobile" />
           </a>
+
           <button
             className="navbar-toggler bg-light"
             type="button"
@@ -23,24 +24,25 @@ function App() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 hamburger">
-              <li className="nav-item bg-light px-2 m-1 rounded border border-primary">
-                <a
-                  className="nav-link text-primary active"
-                  aria-current="page"
-                  href="#work"
-                >
+              <li className="nav-item rounded nav__item px-2 m-1 ">
+                <a className="nav-link text-primary" href="#work">
                   Work
                 </a>
               </li>
-              <li className="nav-item bg-light px-2 m-1 rounded border border-primary">
-                <a className="nav-link text-primary active" href="#about">
+              <li className="nav-item rounded nav__item px-2 m-1">
+                <a className="nav-link text-primary" href="#about">
                   About
                 </a>
               </li>
-              <li className="nav-item bg-light px-2 m-1 rounded border border-primary">
-                <a className="nav-link text-primary active" href="#home">
+              <li className="nav-item rounded nav__item px-2 m-1">
+                <a
+                  className="nav-link text-primary active"
+                  aria-current="page"
+                  href="#home"
+                >
                   Home
                 </a>
               </li>
@@ -48,8 +50,9 @@ function App() {
           </div>
         </div>
       </nav>
+
       <div className="container">
-        <div className="row mb-5">
+        <div className="row">
           <div id="home" className="col-md-6">
             <div className="introduction">
               <div className="kicker">
@@ -132,13 +135,18 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="row mb-5">
-          <div id="about" className="col-md-12">
+
+        <div className="row mt-5">
+          <div
+            id="about"
+            className="col-md-12"
+            style={{ scrollMarginTop: "6em" }}
+          >
             <h2 className="section-title">About me</h2>
             <hr className="hr-tag" />
           </div>
           <div className="col-md-6">
-            <p className="section-text mt-3">
+            <p className="section-text mt-4">
               I love creating for the internet. I build solid and scalable
               frontend and backend products with great user experience. Attended
               an extensive bootcamp called as Zen Class by Guvi, an IIT Madras
@@ -176,107 +184,96 @@ function App() {
           </div>
         </div>
 
-        <div className="row mb-5">
-          <div id="work" className="col-md-12">
+        <div className="row mt-5">
+          <div
+            id="work"
+            className="col-md-12"
+            style={{ scrollMarginTop: "6em" }}
+          >
             <h2 className="section-title">Projects</h2>
             <hr className="hr-tag" />
           </div>
-
           <div className="col-md-12">
             {projects.map((p, i) => (
-              <>
-                <div key={i} className="row align-items-center">
-                  <div className="col-md-6">
-                    <div className="card mt-4 p-3 project-vessel">
-                      <div className="card-body d-flex flex-column justify-content-between">
-                        <div className="texts">
-                          <h3 className="section-sub-title text-danger">
-                            {p.name}
-                          </h3>
-                          <p
-                            className="section-text text-primary"
-                            style={{ width: "90%" }}
-                          >
-                            {p.description}
-                          </p>
-                          <p className="small text-dark">
-                            Demo Account :
-                            <span className="px-1">
-                              <i className="fas fa-envelope-square px-1"></i>
-                              {p.demoEmail}
-                            </span>
-                            <span className="px-1">
-                              <i className="fas fa-lock-open px-1"></i>
-                              {p.demoPass}
-                            </span>
-                          </p>
-                        </div>
-                        <div className="btns">
-                          <button type="button" className="proj-btns">
-                            <a
-                              href={p.liveDemo}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              Live Demo
-                            </a>
-                          </button>
-                          <button type="button" className="proj-btns">
-                            <a
-                              href={p.frontend}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <i className="fab fa-github pe-2"></i>
-                              FE
-                            </a>
-                          </button>
-                          <button type="button" className="proj-btns">
-                            <a
-                              href={p.backend}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <i className="fab fa-github pe-2"></i>
-                              BE
-                            </a>
-                          </button>
-                        </div>
+              <div key={i} className="row align-items-center">
+                <div className="col-md-6">
+                  <div className="card mt-4 p-3 project-vessel">
+                    <div className="card-body d-flex flex-column justify-content-between">
+                      <div className="texts">
+                        <h3 className="section-sub-title text-danger">
+                          {p.name}
+                        </h3>
+                        <p
+                          className="section-text text-primary"
+                          style={{ width: "90%" }}
+                        >
+                          {p.description}
+                        </p>
+                        <p className="small text-dark">
+                          Demo Account :
+                          <span className="px-1">
+                            <i className="fas fa-envelope-square px-1"></i>
+                            {p.demoEmail}
+                          </span>
+                          <span className="px-1">
+                            <i className="fas fa-lock-open px-1"></i>
+                            {p.demoPass}
+                          </span>
+                        </p>
                       </div>
-                      <div className="proj-tech-logo">
-                        <span className="text-dark text-muted">
-                          Technologies Used
-                        </span>
-                        &nbsp;
-                        {p.technologies.map((l) => (
-                          <img src={l} alt="logo" />
-                        ))}
+                      <div className="btns">
+                        <button type="button" className="proj-btns">
+                          <a href={p.liveDemo} target="_blank" rel="noreferrer">
+                            Live Demo
+                          </a>
+                        </button>
+                        <button type="button" className="proj-btns">
+                          <a href={p.frontend} target="_blank" rel="noreferrer">
+                            <i className="fab fa-github pe-2"></i>
+                            FE
+                          </a>
+                        </button>
+                        <button type="button" className="proj-btns">
+                          <a href={p.backend} target="_blank" rel="noreferrer">
+                            <i className="fab fa-github pe-2"></i>
+                            BE
+                          </a>
+                        </button>
                       </div>
                     </div>
+                    <div className="proj-tech-logo">
+                      <span className="text-dark text-muted">
+                        Technologies Used
+                      </span>
+                      &nbsp;
+                      {p.technologies.map((l, i) => (
+                        <img key={i} src={l} alt="logo" />
+                      ))}
+                    </div>
                   </div>
-                  <div className="col-md-6">
-                    <div className="img-vessel">
-                      <div className="card">
-                        <div className="card-body p-0">
-                          <a href={p.liveDemo} target="_blank" rel="noreferrer">
-                            <img
-                              className="proj-img"
-                              src={p.projectImg}
-                              alt={p.imgAlt}
-                            />
-                          </a>
-                        </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="img-vessel">
+                    <div className="card">
+                      <div className="card-body p-0">
+                        <a href={p.liveDemo} target="_blank" rel="noreferrer">
+                          <img
+                            className="proj-img"
+                            src={p.projectImg}
+                            alt={p.imgAlt}
+                          />
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-md-12">
+        <div className="row mt-5">
+          <div id="contact" className="col-md-12">
             <h2 className="section-title">Contact</h2>
             <hr className="hr-tag" />
           </div>

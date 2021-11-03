@@ -33,6 +33,28 @@ body {
   height: 55px;
 }
 
+.logo:hover {
+  transform: rotate(-360deg);
+  transition: 1s ease-in-out;
+}
+
+.nav__item {
+  color: #004aa8;
+  background-color: #fff;
+  border: 1px solid #004aa8;
+}
+
+.nav__item:hover {
+  color: #fff !important;
+  background-color: #004aa8;
+  border: 1px solid #fff;
+}
+
+.nav__item a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
 .kicker {
   font-size: 1rem;
   font-weight: 300;
@@ -139,11 +161,12 @@ body {
 .introduction,
 .function {
   margin-top: 6rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-vessel {
   width: 100%;
-  height: 480px;
+  height: 450px;
   box-shadow: 0 25px 50px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
@@ -177,23 +200,24 @@ body {
 }
 
 .proj-btns {
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 0.75rem;
+  font-weight: 400;
   margin: 10px 10px 10px 0;
-  padding: 8px 18px;
+  padding: 8px 10px;
   color: #fff;
   background: linear-gradient(
     134deg,
     rgb(106, 152, 240) 0%,
     rgb(73, 97, 220) 99%
   );
-  border-radius: 10px;
   border: none;
+  border-radius: 8px;
   transition: 1s ease-out;
 }
 
 .proj-btns:hover {
   transform: scale(1.1);
+  border-radius: 0px;
 }
 
 .proj-btns a {
@@ -213,9 +237,9 @@ body {
   position: relative;
   top: -30%;
   width: 80%;
-  height: 15rem;
+  height: 10rem;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 img {
@@ -246,11 +270,10 @@ img {
   }
   .dev-img {
     margin: auto;
-    width: 10rem;
+    width: 8rem;
     top: 0rem;
     left: 0rem;
     text-decoration: none;
-    border-radius: 15px;
   }
   .project-vessel {
     height: 100%;
