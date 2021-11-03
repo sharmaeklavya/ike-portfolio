@@ -1,4 +1,5 @@
 import "./App.css";
+import projects from "./Projects";
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
         </div>
       </nav>
       <div className="container">
-        <div className="row">
+        <div className="row mb-5">
           <div id="home" className="col-md-6">
             <div className="introduction">
               <div className="kicker">
@@ -70,7 +71,7 @@ function App() {
                 <span>{"/* I am a Full Stack Developer"} </span>
                 <br /> <span></span> {"based in New Delhi, India */"}
               </p>
-              <div className="cta-btn mt-3">
+              <div className="cta-btn">
                 <a
                   href="mailto:eklavya092@gmail.com"
                   className="btn btn-warning"
@@ -83,7 +84,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="fab fa-github-square"></i>
+                  <i className="fab fa-github-square"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sharmaeklavya"
@@ -91,7 +92,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="fab fa-linkedin"></i>
+                  <i className="fab fa-linkedin"></i>
                 </a>
                 <a
                   href="https://twitter.com/eklavyajs"
@@ -99,17 +100,17 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="fab fa-twitter-square"></i>
+                  <i className="fab fa-twitter-square"></i>
                 </a>
               </div>
             </div>
           </div>
           <div className="col-md-6">
             <div className="triangle" />
-            <div className="function pt-5">
+            <div className="function">
               <div className="card">
                 <div className="card-body text-primary">
-                  <p className="mt-2 mb-1">
+                  <p className="my-2">
                     function <strong>Profile</strong> (fullName, skills)
                     <span>{" {"}</span>
                   </p>
@@ -131,17 +132,17 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div id="about" className="col-md-12 mt-5">
-            <h2 className="section-title pt-5">About me</h2>
+        <div className="row mb-5">
+          <div id="about" className="col-md-12">
+            <h2 className="section-title">About me</h2>
             <hr className="hr-tag" />
           </div>
           <div className="col-md-6">
-            <p className="section-text mt-4">
+            <p className="section-text mt-3">
               I love creating for the internet. I build solid and scalable
               frontend and backend products with great user experience. Attended
               an extensive bootcamp called as Zen Class by Guvi, an IIT Madras
-              incubated company - which helped me learned new skills and gaining
+              incubated company - which helped me learn new skills and gaining
               deep understanding of these technolgoies.
             </p>
           </div>
@@ -169,216 +170,114 @@ function App() {
                 <img src="/imgs/expressjs.svg" alt="expressjs-logo" />
               </span>
               <span className="about-tech-logo">
-                <img src="imgs/mongodb.svg" alt="mongodb-logo" />
+                <img src="imgs/mongodbnosql.svg" alt="mongodb-logo" />
               </span>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div id="work" className="col-md-12 mt-5">
-            <h2 className="section-title pt-3">Projects</h2>
+
+        <div className="row mb-5">
+          <div id="work" className="col-md-12">
+            <h2 className="section-title">Projects</h2>
             <hr className="hr-tag" />
           </div>
-        </div>
-        <div className="row">
+
           <div className="col-md-12">
-            <div className="card mt-4">
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-md-6 p-5">
-                    <h3 className="section-sub-title text-danger">Invoice</h3>
-                    <p className="section-text text-primary">
-                      Invoice has three level of user access - Admin, Manager
-                      and Executive. These users have different level of
-                      privileges. Where Admin can create, update, view and
-                      delete, managers can create, update and view, followed by
-                      executives who can only create and view.
-                    </p>
-
-                    <p className="small text-dark">
-                      Demo Account :
-                      <span className="px-1">
-                        <i class="fas fa-envelope-square px-1"></i>
-                        eklavya@es.in
-                      </span>
-                      <span className="px-1">
-                        <i class="fas fa-lock-open px-1"></i>
-                        123456
-                      </span>
-                    </p>
-                    <button type="button" className="proj-btns">
-                      <a
-                        href="https://proj-invoice.netlify.app"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                    </button>
-                    <button type="button" className="proj-btns">
-                      <a
-                        href="https://github.com/sharmaeklavya/react-invoice"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="fab fa-github pe-2"></i>
-                        Frontend
-                      </a>
-                    </button>
-                    <button type="button" className="proj-btns">
-                      <a
-                        href="https://github.com/sharmaeklavya/node-invoice"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="fab fa-github pe-2"></i>
-                        Backend
-                      </a>
-                    </button>
+            {projects.map((p, i) => (
+              <>
+                <div key={i} className="row align-items-center">
+                  <div className="col-md-6">
+                    <div className="card mt-4 p-3 project-vessel">
+                      <div className="card-body d-flex flex-column justify-content-between">
+                        <div className="texts">
+                          <h3 className="section-sub-title text-danger">
+                            {p.name}
+                          </h3>
+                          <p
+                            className="section-text text-primary"
+                            style={{ width: "90%" }}
+                          >
+                            {p.description}
+                          </p>
+                          <p className="small text-dark">
+                            Demo Account :
+                            <span className="px-1">
+                              <i className="fas fa-envelope-square px-1"></i>
+                              {p.demoEmail}
+                            </span>
+                            <span className="px-1">
+                              <i className="fas fa-lock-open px-1"></i>
+                              {p.demoPass}
+                            </span>
+                          </p>
+                        </div>
+                        <div className="btns">
+                          <button type="button" className="proj-btns">
+                            <a
+                              href={p.liveDemo}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Live Demo
+                            </a>
+                          </button>
+                          <button type="button" className="proj-btns">
+                            <a
+                              href={p.frontend}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <i className="fab fa-github pe-2"></i>
+                              Frontend
+                            </a>
+                          </button>
+                          <button type="button" className="proj-btns">
+                            <a
+                              href={p.backend}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <i className="fab fa-github pe-2"></i>
+                              Backend
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                      <div className="proj-tech-logo">
+                        <span className="text-dark text-muted">
+                          Technologies Used
+                        </span>
+                        &nbsp;
+                        {p.technologies.map((l) => (
+                          <img src={l} alt="logo" />
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-md-6 m-auto">
-                    <a
-                      href="https://proj-invoice.herokuapp.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="proj-img"
-                    >
-                      <img src="imgs/proj-invoice.png" alt="invoice-task" />
-                    </a>
-                    <div className="proj-tech-logo">
-                      <i className="fab fa-react"></i>
-                      <i className="fab fa-bootstrap"></i>
-                      <img src="/imgs/expressjs.svg" alt="expressjs-logo" />
-                      <img src="imgs/mongodb.svg" alt="mongodb-logo" />
+                  <div className="col-md-6">
+                    <div className="img-vessel">
+                      <div className="card">
+                        <div className="card-body p-0">
+                          <a href={p.liveDemo} target="_blank" rel="noreferrer">
+                            <img
+                              className="proj-img"
+                              src={p.projectImg}
+                              alt={p.imgAlt}
+                            />
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="card mt-4">
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-md-6 p-5">
-                    <div className="project">
-                      <h3 className="section-sub-title text-danger">
-                        URL Shortner
-                      </h3>
-                      <p className="section-text text-primary">
-                        This project is designed to create short urls which are
-                        much easier to share with other people. The user can
-                        also track the times of link he/ she has clicked. The
-                        information is saved in individual's account.
-                      </p>
-                      <button type="button" className="proj-btns">
-                        <a
-                          href="https://proj-url-shortner.netlify.app"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Live Demo
-                        </a>
-                      </button>
-                      <button type="button" className="proj-btns">
-                        <a
-                          href="https://github.com/sharmaeklavya/react-url-shortner"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <i className="fab fa-github pe-2"></i>
-                          Frontend
-                        </a>
-                      </button>
-                      <button type="button" className="proj-btns">
-                        <a
-                          href="https://github.com/sharmaeklavya/node-url-shortner"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <i className="fab fa-github pe-2"></i>
-                          Backend
-                        </a>
-                      </button>
-                    </div>
-                  </div>
-                  <div className="col-md-6 m-auto">
-                    <a
-                      href="https://proj-url-shortner.netlify.app"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="proj-img"
-                    >
-                      <img src="imgs/proj-url.png" alt="url-shortner-task" />
-                    </a>
-                    <div className="proj-tech-logo">
-                      <i className="fab fa-react"></i>
-                      <i className="fab fa-bootstrap"></i>
-                      <img src="/imgs/expressjs.svg" alt="expressjs-logo" />
-                      <img src="imgs/mongodb.svg" alt="mongodb-logo" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card mt-4">
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-md-6 p-5">
-                    <h3 className="section-sub-title text-danger">Zen Media</h3>
-                    <p className="section-text text-primary">
-                      It is a community forum. A user can search through
-                      numemous topics, comment on them or write their own
-                      articles.
-                    </p>
-                    <button type="button" className="proj-btns">
-                      <a
-                        href="https://etask.netlify.app/zenportal/index.html"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                    </button>
-                    <button type="button" className="proj-btns">
-                      <a
-                        href="https://github.com/sharmaeklavya/guvi/tree/main/zenportal"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="fab fa-github pe-2"></i>
-                        Frontend
-                      </a>
-                    </button>
-                  </div>
-                  <div className="col-md-6 m-auto">
-                    <a
-                      href="https://etask.netlify.app/zenportal/index.html"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="proj-img"
-                    >
-                      <img
-                        src="imgs/proj-zen-portal.png"
-                        alt="zen-portal-task"
-                      />
-                    </a>
-                    <div className="proj-tech-logo">
-                      <i className="fab fa-html5"></i>
-                      <i className="fab fa-css3-alt"></i>
-                      <i className="fab fa-bootstrap"></i>
-                      <i className="fab fa-js-square"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </>
+            ))}
           </div>
         </div>
 
         <div className="row">
-          <div className="col-md-12 mt-5">
-            <h2 className="section-title pt-3">Contact</h2>
+          <div className="col-md-12">
+            <h2 className="section-title">Contact</h2>
             <hr className="hr-tag" />
           </div>
           <div className="col-md-6">
@@ -391,7 +290,7 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="col-md-6 mb-4">
+          <div className="col-md-6">
             <div className="dev-img">
               <img src="imgs/developer.svg" alt="developer-icon" />
             </div>
