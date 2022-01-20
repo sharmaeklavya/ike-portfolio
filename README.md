@@ -5,3 +5,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Live Demo
 
 [Click here](https://sharmaeklavya.netlify.app) to view it in the browser.
+
+![Live Web Image](/public/imgs/web_screenshot.png)
