@@ -41,7 +41,7 @@ const projects = [
     demoPass: "Not required",
     liveDemo: "https://proj-community.netlify.app",
     hostedAt: "https://github.com/sharmaeklavya/community-app",
-    projectImg: "imgs/proj-community.jpeg",
+    projectImg: "imgs/proj-community.png",
     imgAlt: "community-app-project",
     technologies: [
       "imgs/html5.svg",
