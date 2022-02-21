@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import projects from "./Projects";
 
 function App() {
@@ -228,15 +229,9 @@ function App() {
                           </a>
                         </button>
                         <button type="button" className="proj-btns">
-                          <a href={p.frontend} target="_blank" rel="noreferrer">
+                          <a href={p.hostedAt} target="_blank" rel="noreferrer">
                             <i className="fab fa-github pe-2"></i>
-                            FE
-                          </a>
-                        </button>
-                        <button type="button" className="proj-btns">
-                          <a href={p.backend} target="_blank" rel="noreferrer">
-                            <i className="fab fa-github pe-2"></i>
-                            BE
+                            GitHub
                           </a>
                         </button>
                       </div>
