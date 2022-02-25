@@ -17,6 +17,23 @@ const projects = [
     ],
   },
   {
+    name: "Delivery App",
+    description:
+      "It is a Pizza Delivery Application. Choose pizza, toppings and your favourite beverage; add to cart, make the payment and get it delivered at your doorstep.",
+    demoEmail: "Not required",
+    demoPass: "Not required",
+    liveDemo: "https://proj-delivery.netlify.app",
+    hostedAt: "https://github.com/sharmaeklavya/delivery-app",
+    projectImg: "imgs/proj-delivery.png",
+    imgAlt: "delivery-app-project",
+    technologies: [
+      "imgs/react.svg",
+      "imgs/bootstrap.svg",
+      "imgs/nodejs.svg",
+      "imgs/mongodb.svg",
+    ],
+  },
+  {
     name: "Chatter App",
     description:
       "It is a Chat Application. Users are provided with rooms where they can join in and start a conversation right away with like-minded people.",
@@ -24,7 +41,7 @@ const projects = [
     demoPass: "Not required",
     liveDemo: "https://proj-chatter.netlify.app",
     hostedAt: "https://github.com/sharmaeklavya/chatter-app",
-    projectImg: "imgs/chatter.gif",
+    projectImg: "imgs/proj-chatter.gif",
     imgAlt: "chat-app-project",
     technologies: [
       "imgs/socketio.svg",
