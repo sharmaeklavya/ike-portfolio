@@ -91,7 +91,7 @@ function App() {
                   <i className="fab fa-github-square"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/sharmaeklavya"
+                  href="https://www.linkedin.com/in/eklavyajs"
                   className="home-icon"
                   target="_blank"
                   rel="noreferrer"
