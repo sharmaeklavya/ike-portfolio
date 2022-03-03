@@ -64,6 +64,7 @@ const projects = [
       "imgs/html5.svg",
       "imgs/css3.svg",
       "imgs/bootstrap.svg",
+      "imgs/nodejs.svg",
       "imgs/javascript.svg",
     ],
   },
