@@ -61,6 +61,7 @@ const projects = [
     projectImg: "imgs/proj-community.png",
     imgAlt: "community-app-project",
     technologies: [
+      "imgs/html5.svg",
       "imgs/bootstrap.svg",
       "imgs/nodejs.svg",
       "imgs/javascript.svg",
