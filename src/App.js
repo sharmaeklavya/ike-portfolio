@@ -210,8 +210,8 @@ function App() {
                         >
                           {p.description}
                         </p>
-                        <p className="small text-dark">
-                          Demo Account :
+                        <div className="small text-dark px-1">
+                          <p>Credentials :</p>
                           <span className="px-1">
                             <i className="fas fa-envelope-square px-1"></i>
                             {p.demoEmail}
@@ -220,7 +220,7 @@ function App() {
                             <i className="fas fa-lock-open px-1"></i>
                             {p.demoPass}
                           </span>
-                        </p>
+                        </div>
                       </div>
                       <div className="btns">
                         <button type="button" className="proj-btns">
