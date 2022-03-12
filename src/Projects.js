@@ -20,8 +20,8 @@ const projects = [
     name: "Delivery App",
     description:
       "It is a Pizza Delivery Application. Choose pizza, toppings and your favourite beverage; add to cart, make the payment and get it delivered at your doorstep.",
-    demoEmail: "Not required",
-    demoPass: "Not required",
+    demoEmail: "Credit Card no : 4242424242424242",
+    demoPass: "CVV/Expire Date : Any / Future date",
     liveDemo: "https://proj-delivery.herokuapp.com",
     hostedAt: "https://github.com/sharmaeklavya/carting-app",
     projectImg: "imgs/proj-delivery.png",
