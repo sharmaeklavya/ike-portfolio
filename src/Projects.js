@@ -22,8 +22,8 @@ const projects = [
       "It is a Pizza Delivery Application. Choose pizza, toppings and your favourite beverage; add to cart, make the payment and get it delivered at your doorstep.",
     demoEmail: "Not required",
     demoPass: "Not required",
-    liveDemo: "https://proj-delivery.netlify.app",
-    hostedAt: "https://github.com/sharmaeklavya/delivery-app",
+    liveDemo: "https://proj-delivery.herokuapp.com",
+    hostedAt: "https://github.com/sharmaeklavya/carting-app",
     projectImg: "imgs/proj-delivery.png",
     imgAlt: "delivery-app-project",
     technologies: [
