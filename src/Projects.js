@@ -56,7 +56,7 @@ const projects = [
       "It is a community forum. A user can search through numemous topics, comment on them or write their own articles.",
     demoEmail: "Not required",
     demoPass: "Not required",
-    liveDemo: "https://proj-community.netlify.app",
+    liveDemo: "https://proj-community.herokuapp.com",
     hostedAt: "https://github.com/sharmaeklavya/community-app",
     projectImg: "imgs/proj-community.png",
     imgAlt: "community-app-project",
