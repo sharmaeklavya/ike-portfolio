@@ -150,9 +150,9 @@ function App() {
             <p className="section-text mt-4">
               I love creating for the internet. I build solid and scalable
               frontend and backend products with great user experience. Attended
-              an extensive bootcamp called as Zen Class by Guvi, an IIT Madras
-              incubated company - which helped me learn new skills and gaining
-              deep understanding of these technolgoies.
+              an extensive bootcamp called Zen Class by Guvi, an IIT Madras
+              incubated company - which helped me acquire new skills while
+              gaining deep understanding of following technolgoies.
             </p>
           </div>
           <div className="col-md-6">

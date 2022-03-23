@@ -2,7 +2,7 @@ const projects = [
   {
     name: "Invoice App",
     description:
-      "Invoice has three level of user access - Admin, Manager and Executive. These users have different level of privileges. Where Admin can create, update, view and delete, managers can create, update and view, followed by executives who can only create and view.",
+      "The App has three level of user access - Admin, Manager and Executive. These users have different level of privileges, where Admin can create, update, view and delete; Managers can create, update and view, followed by Executives who can only create and view invoices.",
     demoEmail: "eklavya@email.com",
     demoPass: 123456,
     liveDemo: "https://proj-invoice.netlify.app",
@@ -19,7 +19,7 @@ const projects = [
   {
     name: "Delivery App",
     description:
-      "This is a Pizza Delivery App. The app allows users to create an account with the app, select pizza, toppings and thier favourite beverage. Users can add to cart, make the payment and check order status. It also tracks all the previous orders made by the customer.",
+      "This is a Pizza Delivery App. The app allows users to create an account with the app. Users can add pizzas, toppings and thier favourite beverages to the cart. Users can make payments and check the order status. The App also tracks all the previous orders made by a customer.",
     demoEmail: "eklavya@email.com",
     demoPass: "eklavya@12",
     liveDemo: "https://proj-delivery.herokuapp.com",
@@ -54,7 +54,7 @@ const projects = [
   {
     name: "Chatter App",
     description:
-      "This is a Chat Application. The app has a list of room/topics. You enter your name on the login page, select the room and start chatting with people having similar interests. Send a text or emojis to express yourself. On the left side, app displays the room name and names of all the persons who are currently in the room. The app also displays the information on the user joining the room or leaving the room.",
+      "This is a Chat Application. The app has a list of room/topics. A user can enter with his/her name on the login page, select a room and start chatting with people having similar interests. Send a text or emojis to express themselves. On the left side, app displays room name and names of all the persons who are currently in the room. The app also displays the information on the user joining a room or leaving a room.",
     demoEmail: "Not required",
     demoPass: "Not required",
     liveDemo: "https://proj-chatter.netlify.app",
