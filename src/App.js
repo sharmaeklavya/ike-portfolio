@@ -205,22 +205,32 @@ function App() {
                           {p.name}
                         </h3>
                         <p
-                          className="section-text text-primary"
+                          className="section-text text-primary mb-3"
                           style={{ width: "90%" }}
                         >
                           {p.description}
                         </p>
-                        <div className="small text-dark px-1">
-                          <p>Credentials :</p>
-                          <span className="px-1">
-                            <i className="fas fa-envelope-square px-1"></i>
+                        <div className="small text-dark mb-3">
+                          <p className="mb-3">Credentials :</p>
+                          <span className="pr-3">
+                            <i className="fas fa-envelope-square px-2"></i>
                             {p.demoEmail}
                           </span>
-                          <span className="px-1">
-                            <i className="fas fa-lock-open px-1"></i>
+                          <span className="pl-3">
+                            <i className="fas fa-lock-open px-2"></i>
                             {p.demoPass}
                           </span>
                         </div>
+                        {p.name === "Delivery App" ? (
+                          <div className="small text-dark mb-3">
+                            <small className="d-block px-2 mt-3">
+                              Credit Card No : 4242 4242 4242 4242
+                            </small>
+                            <small className="small px-2 mt-3">
+                              MM/YY : Any future date. CVV : Any 3 digits.
+                            </small>
+                          </div>
+                        ) : null}
                       </div>
                       <div className="btns">
                         <button type="button" className="proj-btns">
@@ -278,7 +288,7 @@ function App() {
                 href="mailto: eklavya092@gmail.com"
                 className="btn btn-warning"
               >
-                Email me
+                Message me here
               </a>
             </div>
           </div>
