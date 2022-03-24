@@ -38,21 +38,31 @@ body {
   transition: 1s ease-in-out;
 }
 
-.nav__item {
-  color: #004aa8;
-  background-color: #fff;
-  border: 1px solid #004aa8;
-}
-
-.nav__item:hover {
-  color: #fff !important;
-  background-color: #004aa8;
-  border: 1px solid #fff;
-}
-
-.nav__item a:hover {
-  color: #fff !important;
+.nav__link {
+  display: inline-block;
   text-decoration: none;
+  border: 1px solid #fff;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 350ms ease-in-out, transform 150ms ease;
+  color: #004aa8 !important;
+  background-color: #fff !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.nav__link:hover{
+  color: #fff !important;
+  background-color: #004aa8 !important;
+}
+
+.nav__link:focus {
+  outline-offset: -4px;
+  outline: none;
+}
+
+.nav__link:active {
+  transform: scale(0.99);
 }
 
 .kicker {

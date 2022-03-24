@@ -7,9 +7,9 @@ function App() {
     <>
       <nav
         id="top-menu"
-        className="navbar sticky-top navbar-expand-lg navbar-light"
+        className="navbar sticky-top navbar-expand-lg navbar-light "
       >
-        <div id="navi" className="container-fluid">
+        <div id="navi" className="container-fluid ">
           <a className="navbar-brand logo" href="/">
             <img src="imgs/logo34x35.svg" alt="logo-for-mobile" />
           </a>
@@ -27,20 +27,20 @@ function App() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 hamburger">
-              <li className="nav-item rounded nav__item px-2 m-1 ">
-                <a className="nav-link text-primary" href="#work">
+            <ul className="navbar-nav  ms-auto mb-2 mb-lg-0 hamburger">
+              <li className="nav-item m-1">
+                <a className="nav-link nav__link rounded px-3" href="#work">
                   Work
                 </a>
               </li>
-              <li className="nav-item rounded nav__item px-2 m-1">
-                <a className="nav-link text-primary" href="#about">
+              <li className="nav-item m-1">
+                <a className="nav-link nav__link rounded px-3" href="#about">
                   About
                 </a>
               </li>
-              <li className="nav-item rounded nav__item px-2 m-1">
+              <li className="nav-item m-1">
                 <a
-                  className="nav-link text-primary active"
+                  className="nav-link nav__link rounded px-3 active"
                   aria-current="page"
                   href="#home"
                 >
