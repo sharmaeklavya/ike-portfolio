@@ -23,7 +23,7 @@ const projects = [
     demoEmail: "eklavya@email.com",
     demoPass: "eklavya@12",
     liveDemo: "https://proj-delivery.herokuapp.com",
-    hostedAt: "https://github.com/sharmaeklavya/carting-app",
+    hostedAt: "https://github.com/sharmaeklavya/delivery-app",
     projectImg: "imgs/proj-delivery.png",
     imgAlt: "delivery-app-project",
     technologies: [
