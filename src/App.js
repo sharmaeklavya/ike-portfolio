@@ -98,14 +98,14 @@ function App() {
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
-                <a
+                {/* <a
                   href="https://twitter.com/eklavyajs"
                   className="home-icon"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i className="fab fa-twitter-square"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
