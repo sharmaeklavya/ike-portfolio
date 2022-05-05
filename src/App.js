@@ -1,10 +1,19 @@
 import "./App.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import projects from "./Projects";
 
 function App() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true);
+    }, 1500);
+    return () => clearTimeout(timeout);
+  }, [show]);
+
   return (
-    <>
+    <React.Fragment>
       <nav
         id="top-menu"
         className="navbar sticky-top navbar-expand-lg navbar-light "
@@ -110,7 +119,7 @@ function App() {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="triangle" />
+            {!show ? null : <div className="triangle" />}
             <div className="function">
               <div className="card">
                 <div className="card-body text-primary">
@@ -299,7 +308,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 
