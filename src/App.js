@@ -107,14 +107,14 @@ function App() {
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
-                {/* <a
-                  href="https://twitter.com/eklavyajs"
+                <a
+                  href="/eklavya_developer.pdf"
                   className="home-icon"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-twitter-square"></i>
-                </a> */}
+                  <i class="fas fa-file-csv"></i>
+                </a>
               </div>
             </div>
           </div>
